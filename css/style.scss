@@ -90,6 +90,8 @@ nav{
     margin-bottom: calc(20/1366*100vw);
   }
   p{
+    text-align: start;
+    margin-left: 7vw;
     font-size: calc(16/1366*100vw);
   }
 }
@@ -115,11 +117,20 @@ nav{
     top: -0.5vw;
     left: -0.5vw;
     p{
-      font-size: calc(16/1366*100vw);
-      color: #f1f1f1;
-      font-weight: 500;
-      line-height: 2vw;
+      &:first-child{
+        font-size: calc(12/1366*100vw);
+        color: #f1f1f1;
+        font-weight: 500;
+        line-height: 1.5vw;
+      }
+      &:last-child{
+        font-size: calc(32/1366*100vw);
+        color: #f1f1f1;
+        font-weight: 500;
+        line-height: 2.5vw;
+      }
     }
+
   }
 }
 /*もみほぐしデモとは*/ 
@@ -524,6 +535,9 @@ footer{
       margin-bottom: calc(20/375*100vw);
     }
     p{
+      text-align: start;
+      margin-left: 1vw;
+      margin-right: 1vw;
       font-size: calc(12/375*100vw);
       line-height: 5vw;
     }
@@ -548,9 +562,18 @@ footer{
       top: -3vw;
       left: -1vw;
       p{
-        font-size: calc(24/375*100vw);
-        font-weight: 500;
-        line-height: 10vw;
+        &:first-child{
+          font-size: calc(16/375*100vw);
+          color: #f1f1f1;
+          font-weight: 500;
+          line-height: 6vw;
+        }
+        &:last-child{
+          font-size: calc(40/375*100vw);
+          color: #f1f1f1;
+          font-weight: 500;
+          line-height: 12vw;
+        }
       }
     }
   }
@@ -571,6 +594,10 @@ footer{
     justify-content:center;
     h3{
       font-size: calc(20/375*100vw);
+      .small{
+        font-size: calc(10/375*100vw);
+        color: #333;
+      }
     }
     p{
       font-size: calc(12/375*100vw);
